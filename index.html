@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const lotsOfDecimal = 1.766584958675746364;
+        lotsOfDecimal;
+        const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+        twoDecimalPlaces;
+        let a = 10;
+        let max = 57;
+        let actual = max - 13;
+        let percentage = actual / max;
+        let b = 7 * a;
+
+
+        document.getElementById("demo").innerHTML = 
+        " 23 + 97= " + Number(23 + 97) + "<br>" +
+        " Add a sequence of 6 different numbers together. " + Number(1 + 2 + 3 + 4 + 5 + 6) + "<br>" +
+        " (4 + 6 + 9) / 77 = " + Number((4+6+9)/77)  + "<br>" +
+        " a = " +  a + "<br>" +
+        " b = " +  b + "<br>" +
+        " 9 * a = " +  Number(9) * a + "<br>" + 
+        " percentage = " + percentage + "<br>";
+
+        //functions
+        function add7(number){
+          return number + 7;
+        }
+
+        function mulitply(number1, number2){
+          return number1 * number2;
+        }
+
+        function capitalize(text){
+          let capital = text.substr(0,1);
+          let rest = text.substr(1);
+          return capital.toUpperCase() + rest.toLowerCase() ;
+        }
+
+        function lastLetter(text){
+          return text.substr(-1);
+        }
+
+        </script>
+  </script>
+</body>
+</html>
